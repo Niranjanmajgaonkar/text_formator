@@ -36,7 +36,7 @@ function App() {
         {/* Textarea and Buttons */}
         <div className="flex items-center flex-col w-full h-max">
           {/* Wrapper for Textarea and Copy Buttons */}
-          <div className="relative w-3/5 mt-12">
+          <div className="relative w-11/12 lg:w-3/5 mt-12">
             <textarea
               className="w-full h-52 border border-gray-300 rounded pl-4 pr-20"
               onChange={change}
@@ -46,16 +46,7 @@ function App() {
             ></textarea>
             
             {/* Top-right Copy Button */}
-            <button
-              className="absolute right-2 top-2 bg-gray-500 text-white px-4 py-2 rounded"
-              onClick={() => {
-                navigator.clipboard.writeText(text);
-                const textArea = document.getElementById("textArea");
-                textArea.select(); // Highlight the text
-              }}
-            >
-              Copy
-            </button>
+      
 
             {/* Bottom-right Copy Button */}
             <button
